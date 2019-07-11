@@ -26,5 +26,18 @@ class LessonLoopFor {
 		}
 
 		System.out.println();
+
+		outerLoop:
+		for (int i=0; i<10; i++) {
+			for (int j=0; j<5; j++) {
+				if (j == 3) {
+					break outerLoop;
+				}
+				
+				System.out.printf("%d.%d; ", i, j);
+			}
+		}
+
+		System.out.println();
 	}
 }
